@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Poppins, sans-serif;
+}
+
+h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+p,
+li {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav{
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: #ee0909;
+    
+}
+
+
+
+.nav-right{
+    display: flex;
+    gap: 6rem;
+}
+
+nav a{
+    margin-top: 0.8rem;
+    font-size: 23px;
+    color: inherit;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .logo-navbar li{
+    font-size: 35px;
+    font-weight: 1000;
+  }
+
+#hero-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+   #hero-container{
+    display: block;    
+    }
+    .language-container{
+        text-align: center;
+    }    
+    .about-me{
+        text-align: center;
+    }
+    .about-me p{
+        margin: auto;
+    }
+
+    .projects-container{
+        text-align: center;
+    }
+
+    #card-wrapper h2{ 
+        text-align: center;
+    }
+}
+
+.about-me p{
+    width: 22.5rem;
+}
+
+.profile-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img h2{
+    padding: 2rem 0 0 0;
+}
+
+.projects-container{
+    padding: 0 0 2rem 0;
+}
+
+.language-container h2{
+    padding: 0 0 1rem 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card p {
+    margin-top: 0.5rem;
+}
+
+#card-wrapper h2 {
+    margin-left: 3rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1rem 3rem 1rem 3rem;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-right img {
+    width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        display: block;
+        text-align: center;
+    }
+}
+
