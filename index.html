@@ -18,6 +18,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    
   </head>
 
   <body>
@@ -25,79 +26,68 @@
       <ul class="logo-navbar">
         <li>my porto.</li>
       </ul>
-      <ul class="nav-right">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#tech" li>tech</a>
-        <a href="#projects">projects</a>
-      </ul>
+
     </nav>
-    <aside>
+    <main>
       <section id="hero-container">
         <div class="about-me">
           <h2>about me</h2>
           <p>
             Hai! aku syafiq. Aku adalah seorang mahasiswa ilmu komputer yang
             mempunyai hobi sinematografi dan juga komputer. Aku suka keduanya
-            sejak aku 10 tahun. 
+            sejak aku 10 tahun. Aku mengambil gambar menggunakan handphone dan
+            beberapa menggunakan kamera DSLR Canon Kiss X5. Sekarang aku mencoba
+            untuk develop beberapa web serta mempelajarinya.
           </p>
         </div>
         <div class="profile-img">
-          <img src="assets/Vector.svg" alt="my-pic" />
-          <h2>Syafiq Syadidul Azmi</h2>
-        </div>
-        <div class="right-side">
-          <div class="projects-container">
-            <h2>projects</h2>
-            <p>Ada banyak pokoknya</p>
-          </div>
-          <div class="language-container">
-            <h2>language</h2>
-            <div>
-              <img src="assets/c 1.svg" alt="" />
-              <img src="assets/css.svg" alt="" />
-              <img src="assets/html.svg" alt="" />
-              <img src="assets/python.svg" alt="" />
-              <img src="assets/javascript.svg" alt="" />
-            </div>
-          </div>
+          <img src="assets/cowoganteng.png" alt="my-pic" />
         </div>
       </section>
-      <section id="card-wrapper">
-        <h2>LATEST PROJECTS</h2>
-        <div class="card-container">
-          <div class="card">
-            <img src="assets/card1.png" alt="" />
-            <p>Lorem Ipsum (2022)</p>
-          </div>
-          <div class="card">
-            <img src="assets/card2.png" alt="" />
-            <p>Dolor sit amet (2022)</p>
-          </div>
-          <div class="card">
-            <img src="assets/card3.png" alt="" />
-            <p>ini card 3 (2023)</p>
-          </div>
-          <div class="card">
-            <img src="assets/card4.png" alt="" />
-            <p>ini card 4 (2023)</p>
-          </div>
+      <section id="arts">
+        <div class="pic-cards">
+          <img src="assets/capybarasafari.jpg" alt="capybara">
+        </div>
+        <div class="pic-cards">
+          <img src="assets/gajah.jpg" alt="gajah">
+        </div>
+        <div class="pic-cards">
+          <img src="assets/jendelamalva.jpg" alt="window">
+        </div>
+        <div class="pic-cards">
+          <img src="assets/jkt-porto.jpg" alt="jakarta">
+        </div>
+        <div class="pic-cards">
+          <img src="assets/sigma.jpg" alt="singa">
+        </div>
+        <div class="pic-cards">
+          <img src="assets/livingroom.jpg" alt="livingroom">
         </div>
       </section>
+    </main>
+
+    <aside id="social-media">
+      <div class="social-icons">
+        <a href="https://github.com/Didul-arch"><img src="assets/github.png" alt="github" /></a>
+        <a href=mailto:"syadidulazmi11@gmail.com"><img src="assets/gmail.png" alt="gmail" /></a>
+        <a href="https://instagram.com/diduul"><img src="assets/instagram-logo.png" alt="instagram" /></a>
+      </div>
     </aside>
+
     <footer>
       <div class="footer-left">
-        <h3>Made with HTML CSS</h3>
+        <h3>Made With Love</h3>
       </div>
       <div class="footer-mid">
         <h1>IWDC</h1>
       </div>
-      <div class="footer-right">
-        <h3>Contact me :</h3>
-        <img src="assets/github.png" alt="github" />
-        <img src="assets/gmail.png" alt="gmail" />
-        <img src="assets/discord.png" alt="discord" />
-      </div>
+
     </footer>
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="fullImage">
+      <div id="caption"></div>
+    </div>    
   </body>
+  <script src="otak.js"></script>
 </html>
